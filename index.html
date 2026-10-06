@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi tienda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">K´ WATCH <span>Relojes · Casio · Q&Q</span></div>
+  </header>
+
+  <nav class="menu">
+    <a href="#" class="active">Inicio</a>
+    <a href="#">Tienda</a>
+    <a href="#">Relojes</a>
+    <a href="#">Marcas</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="tag">Colección Casio · Q&Q</p>
+      <h1>El reloj que todos desean</h1>
+      <p class="desc">Relojes elegantes y de calidad para cada ocasión. Encuentra el modelo que marca tu estilo.</p>
+      <a href="#" class="btn">Comprar ahora</a>
+    </div>
+  </section>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+    :root { --gold: #c9a96e; --black: #0a0a0a; }
+    body { margin: 0; background: var(--black); }
+
+    /* Barra superior con logo */
+    .topbar {
+      background: #fff;
+      text-align: center;
+      padding: 14px 20px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      letter-spacing: 6px;
+      color: #111;
+    }
+    .logo span {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 3px;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+
+    /* Menú */
+    .menu {
+      background: var(--black);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 16px 20px;
+      border-bottom: 1px solid #222;
+    }
+    .menu a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+    }
+    .menu a:hover, .menu a.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* Portada (contenido centrado) */
+    .hero {
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;   /* centra horizontalmente */
+      text-align: center;        /* centra el texto */
+      padding: 0 8%;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.6)),
+        radial-gradient(circle at 50% 50%, #3a3a3a, #000 70%);
+      /* Para usar una foto de reloj, reemplaza el radial-gradient por:
+         url('tu-imagen.jpg') center/cover no-repeat */
+    }
+    .hero-content {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .tag {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 12px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      line-height: 1.15;
+      color: #fff;
+      margin: 0 0 18px;
+    }
+    .desc {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #111;
+      background: var(--gold);
+      padding: 14px 34px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #fff; }
+
+    @media (max-width: 600px) {
+      .menu { gap: 20px; }
+      .hero h1 { font-size: 2.1rem; }
+    }
+  </style>
+  </style>
+  </style>
+
+  <p class="slogan">
+    Tiempo con carácter
+  </p>
+
+  <div class="beneficios">
+    <span>🚚 Envíos en Bogotá</span>
+    <span>🔒 Compra segura</span>
+    <span>📦 Seguimiento de pedido</span>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+    :root { --gold: #c9a96e; --black: #0a0a0a; }
+
+    /* Eslogan */
+    .slogan {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 0.85rem;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--gold);
+      margin: 0;
+      padding: 28px 20px 24px;
+      background: var(--black);
+    }
+
+    /* Línea decorativa a los lados del eslogan */
+    .slogan::before,
+    .slogan::after {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 1px;
+      background: var(--gold);
+      vertical-align: middle;
+      margin: 0 18px;
+    }
+
+    /* Beneficios */
+    .beneficios {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      background: #111;
+      border-top: 1px solid #222;
+      border-bottom: 2px solid var(--gold);
+      padding: 18px 20px;
+      margin: 0;
+    }
+
+    .beneficios span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .beneficios span:hover { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      .slogan { letter-spacing: 3px; font-size: 0.75rem; }
+      .slogan::before, .slogan::after { width: 25px; margin: 0 10px; }
+      .beneficios { gap: 18px; flex-direction: column; align-items: center; }
+    }
+  </style>
+
+  <div id="productos"></div>
+
+  <div class="carrito">
+    <h2>🧾 Carrito de Compras</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <div class="resumen">
+      <p>
+        Envío: <strong>Gratis</strong>
+      </p>
+
+      <p class="total">
+        Total: $<span id="total">0</span>
+      </p>
+    </div>
+
+    <button class="vaciar" onclick="vaciarCarrito()">
+      🧼 Vaciar Carrito
+    </button>
+
+    <button class="finalizar" onclick="finalizarCompra()">
+      ✅ Finalizar Compra
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
